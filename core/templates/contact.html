@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block title %}
+Contact - {{ block.super }} {% endblock title %}
+{% block content %}
+<header>
+    <h1>Hello Web App</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<h1>Contact page</h1>
+<p>Contact content.</p>
+{% endblock content %}
